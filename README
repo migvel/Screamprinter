@@ -1,0 +1,6 @@
+Specific software for an interactive installation.
+
+- cylmodeler.py, process the 3d models in Blender, communicates with the soundserver.py and calls external applications like skeinforge and printrun(pronsole)
+- soundserver.py, server that records the sounds and sends back to the client. Also sends Gcode commands to the printer extension hardware(realy board). And listed the input(User buttom).
+
+You need to copy .pronsolerc file into you home directory, this one, is loaded when is called printrun and executes python code(in that file). Basically controls the realy board, saves a copy of files, converts to gcode and sends the gcode file to the printer.(check the paths directory)
